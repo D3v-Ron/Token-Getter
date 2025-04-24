@@ -1,0 +1,109 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="#0A0A12"
+	android:padding="16dp">
+	<TextView
+		android:id="@+id/textview5"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="16dp"
+		android:gravity="center_horizontal|center_vertical"
+		android:text="Quantheon Token Tool"
+		android:textSize="24sp"
+		android:textStyle="bold"
+		android:textColor="#6A5ACD"
+		android:fontFamily="monospace"
+		android:letterSpacing="0.1" />
+	<FrameLayout
+		android:id="@+id/frame_layout15"
+		android:layout_width="match_parent"
+		android:layout_height="300dp"
+		android:layout_marginBottom="16dp"
+		android:padding="2dp"
+		android:background="@drawable/border_gradient_webview">
+		<WebView
+			android:id="@+id/webView"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="#11111A" />
+	</FrameLayout>
+	<FrameLayout
+		android:id="@+id/tokenContainer"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="16dp"
+		android:padding="2dp"
+		android:background="@drawable/border_gradient_textview">
+		<TextView
+			android:id="@+id/tokenView"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="12dp"
+			android:background="#1A1A2E"
+			android:text="Token &amp; Info will appear here"
+			android:textSize="14sp"
+			android:textColor="#00FFFF"
+			android:textIsSelectable="true"
+			android:typeface="monospace"
+			android:lineSpacingExtra="4dp" />
+	</FrameLayout>
+	<LinearLayout
+		android:id="@+id/buttonContainer"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="16dp"
+		android:orientation="vertical"
+		android:divider="@drawable/divider_space"
+		android:showDividers="middle"
+		android:dividerPadding="8dp">
+		<FrameLayout
+			android:id="@+id/frame_layout16"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="12dp"
+			android:background="@drawable/button_border_purple">
+			<Button
+				android:id="@+id/copyTokenBtn"
+				android:layout_width="match_parent"
+				android:layout_height="48dp"
+				android:background="@android:color/transparent"
+				android:text="Copy Token"
+				android:textSize="16sp"
+				android:textColor="#00FFFF"
+				android:textAllCaps="false"
+				android:fontFamily="monospace"
+				android:letterSpacing="0.05" />
+		</FrameLayout>
+		<FrameLayout
+			android:id="@+id/frame_layout17"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/button_border_blue">
+			<Button
+				android:id="@+id/viewHistoryBtn"
+				android:layout_width="match_parent"
+				android:layout_height="48dp"
+				android:background="@android:color/transparent"
+				android:text="View Token History"
+				android:textSize="16sp"
+				android:textColor="#00FFFF"
+				android:textAllCaps="false"
+				android:fontFamily="monospace"
+				android:letterSpacing="0.05" />
+		</FrameLayout>
+	</LinearLayout>
+	<TextView
+		android:id="@+id/footerText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="8dp"
+		android:text="v1.0 · Quantheon Labs, By: Ron 👑"
+		android:textSize="12sp"
+		android:textColor="#6A5ACD"
+		android:layout_gravity="center_horizontal|center_vertical" />
+</LinearLayout>
